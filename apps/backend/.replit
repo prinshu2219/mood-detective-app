@@ -1,0 +1,26 @@
+language = "nodejs"
+run = "pnpm start"
+entrypoint = "dist/server.js"
+
+[nix]
+channel = "stable-23_11"
+
+[env]
+PATH = "/home/runner/$REPL_SLUG/.config/npm/node_global/bin:/home/runner/$REPL_SLUG/node_modules/.bin"
+npm_config_prefix = "/home/runner/$REPL_SLUG/.config/npm/node_global"
+
+[packager]
+language = "nodejs"
+
+[packager.features]
+packageSearch = true
+guessImports = true
+
+[languages]
+[languages.javascript]
+pattern = "**/*.js"
+syntax = "javascript"
+
+[languages.typescript]
+pattern = "**/*.ts"
+syntax = "typescript"

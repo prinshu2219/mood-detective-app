@@ -1,0 +1,16 @@
+{
+  "name": "mood-detective-backend",
+  "version": "1.0.0",
+  "description": "Mood Detective Backend API",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "pnpm install && pnpm build",
+    "start": "node dist/server.js"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "cyclic": {
+    "startCommand": "pnpm start"
+  }
+}

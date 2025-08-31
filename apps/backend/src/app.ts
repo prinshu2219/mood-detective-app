@@ -4,11 +4,11 @@ import cors from 'cors';
 import morgan from 'morgan';
 import rateLimit from 'express-rate-limit';
 import { z } from 'zod';
-import { analyze } from './lib/analyze';
-import { Session } from './models/Session';
-import { Attempt } from './models/Attempt';
-import { Score } from './models/Score';
-import { Feedback } from './models/Feedback';
+import { analyze } from './lib/analyze.js';
+import { Session } from './models/Session.js';
+import { Attempt } from './models/Attempt.js';
+import { Score } from './models/Score.js';
+import { Feedback } from './models/Feedback.js';
 
 export function createApp() {
   const app = express();

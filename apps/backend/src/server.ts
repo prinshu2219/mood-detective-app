@@ -1,10 +1,10 @@
 import 'dotenv/config';
 import express from 'express';
-import { connectToDatabase } from './db/connection';
-import { app as baseApp } from './app';
+import { connectToDatabase } from './db/connection.js';
+import { app as baseApp } from './app.js';
 import { z } from 'zod';
-import { Attempt } from './models/Attempt';
-import { Score } from './models/Score';
+import { Attempt } from './models/Attempt.js';
+import { Score } from './models/Score.js';
 
 const app = baseApp;
 

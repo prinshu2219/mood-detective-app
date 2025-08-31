@@ -2,7 +2,9 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "outDir": "dist",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "moduleResolution": "Bundler",
+    "module": "ESNext"
   },
   "include": ["src"]
 }
