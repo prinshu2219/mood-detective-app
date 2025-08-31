@@ -1,0 +1,52 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Detective Luna - Female detective with magnifying glass -->
+  <defs>
+    <linearGradient id="lunaHair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B4513;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#654321;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lunaSkin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFE4C4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F5DEB3;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lunaOutfit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#357ABD;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Body -->
+  <ellipse cx="100" cy="140" rx="35" ry="45" fill="url(#lunaOutfit)"/>
+  
+  <!-- Head -->
+  <circle cx="100" cy="80" r="25" fill="url(#lunaSkin)"/>
+  
+  <!-- Hair -->
+  <path d="M75 65 Q100 45 125 65 Q130 75 125 85 Q100 95 75 85 Q70 75 75 65" fill="url(#lunaHair)"/>
+  
+  <!-- Eyes -->
+  <circle cx="92" cy="75" r="3" fill="#2C3E50"/>
+  <circle cx="108" cy="75" r="3" fill="#2C3E50"/>
+  <circle cx="93" cy="74" r="1" fill="white"/>
+  <circle cx="109" cy="74" r="1" fill="white"/>
+  
+  <!-- Smile -->
+  <path d="M90 85 Q100 90 110 85" stroke="#2C3E50" stroke-width="2" fill="none"/>
+  
+  <!-- Detective Hat -->
+  <ellipse cx="100" cy="55" rx="30" ry="8" fill="#2C3E50"/>
+  <rect x="85" y="55" width="30" height="15" fill="#2C3E50"/>
+  <circle cx="100" cy="70" r="8" fill="#2C3E50"/>
+  
+  <!-- Magnifying Glass -->
+  <circle cx="140" cy="60" r="15" fill="none" stroke="#E74C3C" stroke-width="3"/>
+  <line x1="150" y1="70" x2="160" y2="80" stroke="#E74C3C" stroke-width="3"/>
+  
+  <!-- Arms -->
+  <ellipse cx="70" cy="120" rx="8" ry="20" fill="url(#lunaSkin)"/>
+  <ellipse cx="130" cy="120" rx="8" ry="20" fill="url(#lunaSkin)"/>
+  
+  <!-- Hands -->
+  <circle cx="65" cy="140" r="5" fill="url(#lunaSkin)"/>
+  <circle cx="135" cy="140" r="5" fill="url(#lunaSkin)"/>
+</svg>

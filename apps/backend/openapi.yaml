@@ -1,0 +1,228 @@
+openapi: 3.0.3
+info:
+  title: Mood Detective API
+  version: 0.1.0
+servers:
+  - url: http://localhost:3000
+paths:
+  /api/sessions:
+    post:
+      summary: Create a new session
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                kidName:
+                  type: string
+                  maxLength: 50
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  sessionId:
+                    type: string
+        '400': { $ref: '#/components/responses/BadRequest' }
+        '500': { $ref: '#/components/responses/ServerError' }
+
+  /api/rules/analyze:
+    post:
+      summary: Analyze a sentence with rule-based engine
+      parameters:
+        - in: header
+          name: x-session-id
+          required: true
+          schema: { type: string }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [sentence]
+              properties:
+                sentence:
+                  type: string
+                  maxLength: 500
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  label: { type: string, enum: [HAPPY, SAD, ANGRY, NEUTRAL] }
+                  score: { type: number }
+                  highlights:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        token: { type: string }
+                        weight: { type: number }
+        '400': { $ref: '#/components/responses/BadRequest' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '500': { $ref: '#/components/responses/ServerError' }
+
+  /api/attempts:
+    post:
+      summary: Save a game attempt
+      parameters:
+        - in: header
+          name: x-session-id
+          required: true
+          schema: { type: string }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [sessionId, round, sentence, student, ai, correct]
+              properties:
+                sessionId: { type: string }
+                round: { type: integer, minimum: 1, maximum: 5 }
+                sentence: { type: string, maxLength: 500 }
+                student: { type: string, enum: [HAPPY, SAD, ANGRY] }
+                ai: { type: string, enum: [HAPPY, SAD, ANGRY, NEUTRAL] }
+                correct: { type: boolean }
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema: { type: object, properties: { id: { type: string } } }
+        '400': { $ref: '#/components/responses/BadRequest' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '500': { $ref: '#/components/responses/ServerError' }
+
+  /api/scores:
+    post:
+      summary: Save score for a completed game
+      parameters:
+        - in: header
+          name: x-session-id
+          required: true
+          schema: { type: string }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [sessionId, total, correct, timeSpent]
+              properties:
+                sessionId: { type: string }
+                total: { type: integer, minimum: 1, maximum: 5 }
+                correct: { type: integer, minimum: 0, maximum: 5 }
+                timeSpent: { type: integer, minimum: 0 }
+      responses:
+        '201':
+          description: Created
+          content:
+            application/json:
+              schema:
+                {
+                  type: object,
+                  properties:
+                    { id: { type: string }, stars: { type: integer } },
+                }
+        '400': { $ref: '#/components/responses/BadRequest' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '500': { $ref: '#/components/responses/ServerError' }
+
+  /api/leaderboard:
+    get:
+      summary: Get leaderboard (optional)
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        sessionId: { type: string }
+                        stars: { type: integer }
+                        correct: { type: integer }
+                        total: { type: integer }
+                        timeSpent: { type: integer }
+        '500': { $ref: '#/components/responses/ServerError' }
+
+  /api/feedback:
+    post:
+      summary: Submit feedback
+      parameters:
+        - in: header
+          name: x-session-id
+          required: true
+          schema: { type: string }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [sessionId, emojiRating]
+              properties:
+                sessionId: { type: string }
+                emojiRating: { type: integer, minimum: 1, maximum: 5 }
+                comment: { type: string, maxLength: 1000 }
+                category: { type: string, enum: [game, ui, content, general] }
+                helpful: { type: boolean }
+      responses:
+        '201': { description: Created }
+        '400': { $ref: '#/components/responses/BadRequest' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '500': { $ref: '#/components/responses/ServerError' }
+
+components:
+  responses:
+    BadRequest:
+      description: Bad Request
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              error:
+                type: object
+                properties:
+                  code: { type: string }
+                  message: { type: string }
+    Unauthorized:
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              error:
+                type: object
+                properties:
+                  code: { type: string }
+                  message: { type: string }
+    ServerError:
+      description: Server Error
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              error:
+                type: object
+                properties:
+                  code: { type: string }
+                  message: { type: string }

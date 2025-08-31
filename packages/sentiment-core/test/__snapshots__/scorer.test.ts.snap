@@ -1,0 +1,255 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Sentiment Analysis Engine > Snapshot Tests for Top Examples > should match snapshot for angry examples 1`] = `
+[
+  {
+    "result": {
+      "confidence": 0.75,
+      "highlights": [
+        {
+          "reason": "intensified",
+          "token": "angry",
+          "weight": -3,
+        },
+      ],
+      "label": "ANGRY",
+      "score": -3,
+    },
+    "sentence": "I am so angry right now!",
+  },
+  {
+    "result": {
+      "confidence": 0,
+      "highlights": [],
+      "label": "NEUTRAL",
+      "score": 0,
+    },
+    "sentence": "That is not fair!",
+  },
+  {
+    "result": {
+      "confidence": 0.5,
+      "highlights": [
+        {
+          "reason": "angry",
+          "token": "hate",
+          "weight": -2,
+        },
+      ],
+      "label": "ANGRY",
+      "score": -2,
+    },
+    "sentence": "I hate when this happens!",
+  },
+  {
+    "result": {
+      "confidence": 0.5,
+      "highlights": [
+        {
+          "reason": "angry",
+          "token": "furious",
+          "weight": -2,
+        },
+      ],
+      "label": "ANGRY",
+      "score": -2,
+    },
+    "sentence": "I am furious about this!",
+  },
+  {
+    "result": {
+      "confidence": 0,
+      "highlights": [],
+      "label": "NEUTRAL",
+      "score": 0,
+    },
+    "sentence": "This is really annoying!",
+  },
+]
+`;
+
+exports[`Sentiment Analysis Engine > Snapshot Tests for Top Examples > should match snapshot for happy examples 1`] = `
+[
+  {
+    "result": {
+      "confidence": 0.5,
+      "highlights": [
+        {
+          "reason": "happy",
+          "token": "love",
+          "weight": 2,
+        },
+      ],
+      "label": "HAPPY",
+      "score": 2,
+    },
+    "sentence": "I love ice cream!",
+  },
+  {
+    "result": {
+      "confidence": 0,
+      "highlights": [],
+      "label": "NEUTRAL",
+      "score": 0,
+    },
+    "sentence": "This is the best day ever!",
+  },
+  {
+    "result": {
+      "confidence": 0,
+      "highlights": [],
+      "label": "NEUTRAL",
+      "score": 0,
+    },
+    "sentence": "I am so excited about the party!",
+  },
+  {
+    "result": {
+      "confidence": 0.5,
+      "highlights": [
+        {
+          "reason": "happy",
+          "token": "awesome",
+          "weight": 2,
+        },
+      ],
+      "label": "HAPPY",
+      "score": 2,
+    },
+    "sentence": "My new puppy is awesome!",
+  },
+  {
+    "result": {
+      "confidence": 0,
+      "highlights": [],
+      "label": "NEUTRAL",
+      "score": 0,
+    },
+    "sentence": "I got an A on my test!",
+  },
+]
+`;
+
+exports[`Sentiment Analysis Engine > Snapshot Tests for Top Examples > should match snapshot for neutral examples 1`] = `
+[
+  {
+    "result": {
+      "confidence": 0,
+      "highlights": [],
+      "label": "NEUTRAL",
+      "score": 0,
+    },
+    "sentence": "The sky is blue.",
+  },
+  {
+    "result": {
+      "confidence": 0,
+      "highlights": [],
+      "label": "NEUTRAL",
+      "score": 0,
+    },
+    "sentence": "I have a red backpack.",
+  },
+  {
+    "result": {
+      "confidence": 0,
+      "highlights": [],
+      "label": "NEUTRAL",
+      "score": 0,
+    },
+    "sentence": "The book is on the table.",
+  },
+  {
+    "result": {
+      "confidence": 0,
+      "highlights": [],
+      "label": "NEUTRAL",
+      "score": 0,
+    },
+    "sentence": "It is raining outside.",
+  },
+  {
+    "result": {
+      "confidence": 0,
+      "highlights": [],
+      "label": "NEUTRAL",
+      "score": 0,
+    },
+    "sentence": "I live in a house.",
+  },
+]
+`;
+
+exports[`Sentiment Analysis Engine > Snapshot Tests for Top Examples > should match snapshot for sad examples 1`] = `
+[
+  {
+    "result": {
+      "confidence": 0.5,
+      "highlights": [
+        {
+          "reason": "sad",
+          "token": "lost",
+          "weight": -2,
+        },
+      ],
+      "label": "SAD",
+      "score": -2,
+    },
+    "sentence": "I lost my favorite toy.",
+  },
+  {
+    "result": {
+      "confidence": 0,
+      "highlights": [],
+      "label": "NEUTRAL",
+      "score": 0,
+    },
+    "sentence": "My friend moved away.",
+  },
+  {
+    "result": {
+      "confidence": 0.5,
+      "highlights": [
+        {
+          "reason": "sad",
+          "token": "sad",
+          "weight": -2,
+        },
+      ],
+      "label": "SAD",
+      "score": -2,
+    },
+    "sentence": "I am feeling sad today.",
+  },
+  {
+    "result": {
+      "confidence": 0.5,
+      "highlights": [
+        {
+          "reason": "sad",
+          "token": "miss",
+          "weight": -2,
+        },
+      ],
+      "label": "SAD",
+      "score": -2,
+    },
+    "sentence": "I miss my grandma.",
+  },
+  {
+    "result": {
+      "confidence": 0.5,
+      "highlights": [
+        {
+          "reason": "sad",
+          "token": "cry",
+          "weight": -2,
+        },
+      ],
+      "label": "SAD",
+      "score": -2,
+    },
+    "sentence": "The movie made me cry.",
+  },
+]
+`;

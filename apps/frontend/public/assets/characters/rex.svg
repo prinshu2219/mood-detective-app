@@ -1,0 +1,56 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Rex - The Emotion Explorer -->
+  <defs>
+    <linearGradient id="rexHair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C3E50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495E;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="rexSkin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFE4C4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F5DEB3;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="rexJacket" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#27AE60;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#229954;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Body -->
+  <ellipse cx="100" cy="140" rx="35" ry="45" fill="url(#rexJacket)"/>
+  
+  <!-- Head -->
+  <circle cx="100" cy="80" r="25" fill="url(#rexSkin)"/>
+  
+  <!-- Hair -->
+  <path d="M75 65 Q100 45 125 65 Q130 75 125 85 Q100 95 75 85 Q70 75 75 65" fill="url(#rexHair)"/>
+  
+  <!-- Eyes -->
+  <circle cx="92" cy="75" r="3" fill="#2C3E50"/>
+  <circle cx="108" cy="75" r="3" fill="#2C3E50"/>
+  <circle cx="93" cy="74" r="1" fill="white"/>
+  <circle cx="109" cy="74" r="1" fill="white"/>
+  
+  <!-- Neutral Expression -->
+  <path d="M90 85 Q100 87 110 85" stroke="#2C3E50" stroke-width="2" fill="none"/>
+  
+  <!-- Explorer Hat -->
+  <ellipse cx="100" cy="55" rx="25" ry="6" fill="#8B4513"/>
+  <rect x="90" y="55" width="20" height="12" fill="#8B4513"/>
+  <circle cx="100" cy="67" r="6" fill="#8B4513"/>
+  
+  <!-- Arms -->
+  <ellipse cx="70" cy="120" rx="8" ry="20" fill="url(#rexSkin)"/>
+  <ellipse cx="130" cy="120" rx="8" ry="20" fill="url(#rexSkin)"/>
+  
+  <!-- Hands -->
+  <circle cx="65" cy="140" r="5" fill="url(#rexSkin)"/>
+  <circle cx="135" cy="140" r="5" fill="url(#rexSkin)"/>
+  
+  <!-- Emotion Icons -->
+  <g font-family="Arial" font-size="12" text-anchor="middle">
+    <text x="30" y="40" fill="#FF6B6B">😊</text>
+    <text x="170" y="40" fill="#3498DB">😢</text>
+    <text x="30" y="160" fill="#E74C3C">😠</text>
+    <text x="170" y="160" fill="#95A5A6">😐</text>
+  </g>
+</svg>

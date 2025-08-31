@@ -1,0 +1,55 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Maya - The Thoughtful Friend -->
+  <defs>
+    <linearGradient id="mayaHair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B0000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4B0082;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mayaSkin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFE4C4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F5DEB3;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mayaDress" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9B59B6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8E44AD;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Body -->
+  <ellipse cx="100" cy="140" rx="35" ry="45" fill="url(#mayaDress)"/>
+  
+  <!-- Head -->
+  <circle cx="100" cy="80" r="25" fill="url(#mayaSkin)"/>
+  
+  <!-- Hair -->
+  <path d="M75 65 Q100 45 125 65 Q130 75 125 85 Q100 95 75 85 Q70 75 75 65" fill="url(#mayaHair)"/>
+  
+  <!-- Eyes -->
+  <circle cx="92" cy="75" r="3" fill="#2C3E50"/>
+  <circle cx="108" cy="75" r="3" fill="#2C3E50"/>
+  <circle cx="93" cy="74" r="1" fill="white"/>
+  <circle cx="109" cy="74" r="1" fill="white"/>
+  
+  <!-- Thoughtful Expression -->
+  <path d="M90 85 Q100 88 110 85" stroke="#2C3E50" stroke-width="2" fill="none"/>
+  
+  <!-- Glasses -->
+  <circle cx="92" cy="75" r="8" fill="none" stroke="#2C3E50" stroke-width="2"/>
+  <circle cx="108" cy="75" r="8" fill="none" stroke="#2C3E50" stroke-width="2"/>
+  <line x1="100" y1="75" x2="100" y2="75" stroke="#2C3E50" stroke-width="2"/>
+  
+  <!-- Arms -->
+  <ellipse cx="70" cy="120" rx="8" ry="20" fill="url(#mayaSkin)"/>
+  <ellipse cx="130" cy="120" rx="8" ry="20" fill="url(#mayaSkin)"/>
+  
+  <!-- Hands -->
+  <circle cx="65" cy="140" r="5" fill="url(#mayaSkin)"/>
+  <circle cx="135" cy="140" r="5" fill="url(#mayaSkin)"/>
+  
+  <!-- Thought Bubbles -->
+  <g fill="#E8E8E8" opacity="0.7">
+    <circle cx="160" cy="60" r="8"/>
+    <circle cx="170" cy="50" r="5"/>
+    <circle cx="175" cy="40" r="3"/>
+  </g>
+</svg>

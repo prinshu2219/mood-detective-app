@@ -1,0 +1,18 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "include": ["src", "vite-env.d.ts"],
+  "exclude": [
+    "src/**/__tests__/**",
+    "src/**/*.test.ts",
+    "src/**/*.test.tsx",
+    "src/**/*.spec.ts",
+    "src/**/*.spec.tsx"
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "sentiment-core": ["../../packages/sentiment-core/src"],
+      "content": ["../../packages/content/src"]
+    }
+  }
+}

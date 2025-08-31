@@ -1,0 +1,54 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Tom - The Happy Helper -->
+  <defs>
+    <linearGradient id="tomHair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="tomSkin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFE4C4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F5DEB3;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="tomShirt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF5252;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Body -->
+  <ellipse cx="100" cy="140" rx="35" ry="45" fill="url(#tomShirt)"/>
+  
+  <!-- Head -->
+  <circle cx="100" cy="80" r="25" fill="url(#tomSkin)"/>
+  
+  <!-- Hair -->
+  <path d="M75 65 Q100 45 125 65 Q130 75 125 85 Q100 95 75 85 Q70 75 75 65" fill="url(#tomHair)"/>
+  
+  <!-- Eyes -->
+  <circle cx="92" cy="75" r="3" fill="#2C3E50"/>
+  <circle cx="108" cy="75" r="3" fill="#2C3E50"/>
+  <circle cx="93" cy="74" r="1" fill="white"/>
+  <circle cx="109" cy="74" r="1" fill="white"/>
+  
+  <!-- Big Happy Smile -->
+  <path d="M85 85 Q100 95 115 85" stroke="#2C3E50" stroke-width="3" fill="none"/>
+  
+  <!-- Cheeks -->
+  <circle cx="85" cy="88" r="3" fill="#FFB6C1" opacity="0.6"/>
+  <circle cx="115" cy="88" r="3" fill="#FFB6C1" opacity="0.6"/>
+  
+  <!-- Arms -->
+  <ellipse cx="70" cy="120" rx="8" ry="20" fill="url(#tomSkin)"/>
+  <ellipse cx="130" cy="120" rx="8" ry="20" fill="url(#tomSkin)"/>
+  
+  <!-- Hands -->
+  <circle cx="65" cy="140" r="5" fill="url(#tomSkin)"/>
+  <circle cx="135" cy="140" r="5" fill="url(#tomSkin)"/>
+  
+  <!-- Happy Sparkles -->
+  <g fill="#FFD700">
+    <polygon points="30,40 32,45 37,45 33,48 35,53 30,50 25,53 27,48 23,45 28,45" opacity="0.8"/>
+    <polygon points="170,50 172,55 177,55 173,58 175,63 170,60 165,63 167,58 163,55 168,55" opacity="0.8"/>
+    <polygon points="40,150 42,155 47,155 43,158 45,163 40,160 35,163 37,158 33,155 38,155" opacity="0.8"/>
+  </g>
+</svg>

@@ -1,0 +1,164 @@
+{
+  "welcome": {
+    "title": "Mood Detective",
+    "subtitle": "Can a computer read feelings? Join Detective Luna to find out!",
+    "startButton": "Start Adventure",
+    "description": "A friendly journey for 6th graders."
+  },
+  "characters": {
+    "luna": {
+      "name": "Detective Luna",
+      "role": "Your AI Guide",
+      "description": "A friendly detective who loves solving mood mysteries!",
+      "dialogue": [
+        "Hi there! I'm Detective Luna, and I'm here to help you understand how computers can read feelings!",
+        "Did you know that computers can look at words and figure out if someone is happy, sad, or angry?",
+        "It's like being a detective, but instead of looking for clues, we look for mood words!",
+        "Ready to become a mood detective with me?"
+      ]
+    },
+    "tom": {
+      "name": "Tom",
+      "role": "The Happy Helper",
+      "description": "Always cheerful and ready to share positive vibes!",
+      "dialogue": [
+        "Hey! I'm Tom, and I love finding happy words everywhere!",
+        "Words like 'awesome', 'fantastic', and 'love' make me smile!",
+        "Can you spot the happy words in sentences?"
+      ]
+    },
+    "maya": {
+      "name": "Maya",
+      "role": "The Thoughtful Friend",
+      "description": "Calm and wise, helps understand neutral feelings.",
+      "dialogue": [
+        "Hello! I'm Maya. Sometimes feelings aren't just happy or sad.",
+        "Some sentences are neutral - they don't show strong emotions.",
+        "It's important to recognize when someone is just sharing information."
+      ]
+    },
+    "rex": {
+      "name": "Rex",
+      "role": "The Emotion Explorer",
+      "description": "Helps identify sad and angry feelings with care.",
+      "dialogue": [
+        "Hi! I'm Rex, and I help understand all kinds of feelings.",
+        "Sometimes people feel sad or angry, and that's okay!",
+        "Words like 'upset', 'angry', or 'sad' help us understand these feelings."
+      ]
+    }
+  },
+  "story": {
+    "intro": [
+      "Welcome to Mood Detective Academy!",
+      "I'm Detective Luna, and I'm here to teach you how computers understand feelings.",
+      "Just like detectives look for clues, we look for special words that tell us about moods.",
+      "Are you ready to become a mood detective?"
+    ],
+    "howItWorks": [
+      "Here's how it works:",
+      "Computers read each word in a sentence.",
+      "They look for happy words like 'love' and 'awesome'.",
+      "They also find sad words like 'sad' and 'upset'.",
+      "And angry words like 'angry' and 'hate'.",
+      "Then they decide what mood the sentence shows!"
+    ],
+    "challenge": [
+      "Now it's your turn!",
+      "I'll show you sentences, and you'll guess the mood.",
+      "Drag each sentence to the right mood basket.",
+      "Let's see how good you are at reading feelings!"
+    ]
+  },
+  "sentences": {
+    "happy": [
+      "I love ice cream!",
+      "This is the best day ever!",
+      "I'm so excited about the party!",
+      "My new puppy is awesome!",
+      "I got an A on my test!",
+      "The movie was fantastic!",
+      "I'm really happy today!",
+      "This game is so much fun!",
+      "I love playing with my friends!",
+      "The weather is perfect for a picnic!"
+    ],
+    "sad": [
+      "I lost my favorite toy.",
+      "My friend moved away.",
+      "I'm feeling sad today.",
+      "I miss my grandma.",
+      "The movie made me cry.",
+      "I'm upset about the rain.",
+      "I feel lonely.",
+      "My pet is sick.",
+      "I'm disappointed about the game.",
+      "I'm worried about the test."
+    ],
+    "angry": [
+      "I'm so angry right now!",
+      "That's not fair!",
+      "I hate when this happens!",
+      "I'm furious about this!",
+      "This is really annoying!",
+      "I'm mad at my brother!",
+      "This makes me so angry!",
+      "I can't believe this!",
+      "I'm irritated by the noise.",
+      "This is the worst!"
+    ],
+    "neutral": [
+      "The sky is blue.",
+      "I have a red backpack.",
+      "The book is on the table.",
+      "It's raining outside.",
+      "I live in a house.",
+      "The cat is sleeping.",
+      "I like pizza.",
+      "The car is parked.",
+      "The tree has green leaves.",
+      "I'm wearing a shirt."
+    ]
+  },
+  "game": {
+    "instructions": "Drag each sentence to the mood basket that matches how it feels!",
+    "round": "Round {{number}} of {{total}}",
+    "score": "Score: {{correct}}/{{total}}",
+    "correct": "Great job! That's right!",
+    "incorrect": "Not quite! Let's try again.",
+    "nextRound": "Next Round",
+    "finish": "Finish Game",
+    "congratulations": "Congratulations! You're a Mood Detective!"
+  },
+  "mlPeek": {
+    "title": "How Computers Think",
+    "subtitle": "See how different methods analyze the same sentence",
+    "rulesMethod": "Rule-Based Method",
+    "mlMethod": "Machine Learning Method",
+    "explanation": "Both methods look at the same words but think about them differently!",
+    "trySentence": "Try your own sentence:"
+  },
+  "certificate": {
+    "title": "Mood Detective Certificate",
+    "subtitle": "This certificate is awarded to",
+    "achievement": "for successfully completing the Mood Detective training",
+    "skills": "Skills demonstrated:",
+    "skill1": "• Identifying happy, sad, angry, and neutral emotions in text",
+    "skill2": "• Understanding how computers analyze feelings",
+    "skill3": "• Recognizing mood words and their impact",
+    "date": "Date: {{date}}",
+    "signature": "Detective Luna",
+    "download": "Download Certificate"
+  },
+  "ui": {
+    "loading": "Loading...",
+    "error": "Oops! Something went wrong. Please try again.",
+    "back": "Back",
+    "next": "Next",
+    "skip": "Skip",
+    "continue": "Continue",
+    "start": "Start",
+    "finish": "Finish",
+    "retry": "Try Again"
+  }
+}
